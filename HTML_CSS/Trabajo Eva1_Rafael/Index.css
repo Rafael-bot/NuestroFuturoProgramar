@@ -1,0 +1,258 @@
+body {
+    height:100vh;
+    background: linear-gradient(180deg , red, cyan ,purple, white);/* Aqui lo que he poesto es un fondo animado. Compuesto por 4 colores*/
+    animation: fondo 10s ease infinite;/*Es necesario para que haga la animación*/
+    background-size: 400% 400%;/* Este es el tamaño del fondo*/
+    padding: 10px;
+    font-family: sans-serif;
+  }
+  
+  /*Este es el keyframe de los EFECTOS DE COLORES EN EL FONDO*/
+  @keyframes fondo{
+    50%{/*Esta el mitad del fondo que se va moviendo*/
+      background-position: 0% 50%;
+    }
+    100%{
+      background-position: 100% 0%;/*Esta es la otra mitad del fondo*/
+    } 
+    /*Y con el keyframes conseguimos este efecto*/
+  }
+  
+  .menu {/*Aquí editamos el estilo del encabezado*/
+    border: 3px solid  hidden;
+    border-radius:10px;/*Aqui ponemos las esquinas de los bordes redondeadas*/
+    box-shadow: 2px 2px 2px;/*Aqui va las sombras, le pongo 3 numeros porque son 3 sombras las que lo pongo*/
+    text-transform: uppercase;/*LO transforma en mayusculas en el encabezado*/
+    background: linear-gradient(180deg , purple 0%, cyan 100%);/*Le he puesto una fondo con degradado de dos colores*/
+    position: absolute;/*Se queda donde yo le indica y me deja  hacer scroll*/
+    width: 97%;
+    left: 25px;
+  }
+  
+
+  
+  .fin{/*Este es el estilo del footer*/
+    border: 3px solid  hidden;/*Este es el borde que esta oculto*/
+    border-radius:10px;/*Aqui va las sombras, le pongo 3 numeros porque son 3 sombras las que lo pongo*/
+    box-shadow: 5px 5px 5px;/*Aqui va las sombras, le pongo 3 numeros porque son 3 sombras las que lo pongo*/
+    font-size: 0.9em;
+    background: linear-gradient(180deg , red 0%, cyan 100%);/*Le he puesto una fondo con degradado de dos colores*/
+    padding:10px;
+    text-align:center;
+    position: absolute;
+    bottom: 0;/*Esto lo que hace es porner el footer hasta el fondo de la pagina*/
+    width: 96%;
+    height: 40px;
+    margin-bottom:10px;/*Aqui le pongo un margen para que el footer no este tan pecado*/
+    left: 25px;
+  }
+
+  .fin p{/*Este es el texto del footer*/
+    color:white;
+  }
+  
+  a {/*Esto son los botones del encabezado*/
+    color: #000;
+    text-decoration: none;/*Aqui le quito el formato de link*/
+  }
+  .menu .logo {/*Este es mi nombre que va a la izquierda del encabezado*/
+    color: white;
+    float: left;
+    margin:10px;
+    font-size: medium;
+    padding: 10px;
+    position: block;/*Coge la posicion de un boton ,es decir, no coge tanto rango a la hora de seleccionar el boton*/
+    -webkit-transition: all .25s ease;/*son las transiciones para los diferentes buscadores*/
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+  }
+  .logo:hover{/*Aqui le añado un efecto a mi nombre cada vez que el puntero pasa por encima se agrando y se sobraya con una linea blanca*/
+    font-size:large;
+    text-decoration: underline white;
+  }
+  
+  
+  .menu .contacta{/*Este es el estilo del boton contacta que esta a la derecha*/
+    color: white;
+    float: right;/*Se pega a la derecha*/
+    position: block;
+    padding: 5px;
+    margin: 15px;
+    font-size: medium;
+    -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+  }
+  
+  .menu .contacta:hover{/*Aqui le he puesto efecto al boton de contacata un subrayado*/
+    text-decoration: underline white;
+  }
+  
+  
+  .alumno{/*Este es el estilo del div que copntiene el contenido de la pagina principal.*/
+    top:90px;/*Le añado una separación desde el top*/
+    margin:10px;
+    position: absolute;
+    background-color:black;/*LO pongo el fonfo negro para que haga un borde*/
+    width:97%;
+    height:80%;
+    border: 3px solid  hidden;
+    border-radius:10px;
+  }
+  
+  
+  
+  .alumno .contenido{
+    border: 3px solid  hidden;
+    border-radius:10px;
+    background-color:white;
+    width:96%;
+    height:94%;
+    margin:10px;3
+    padding:10px;
+  }
+
+
+.alumno .contenido div {/*Este div es el que guarda las imagenes*/
+  width: 300px;/*Este es el ancho del div*/
+  margin:80px;/*El margen que le he querido poner*/
+}
+
+.alumno .contenido .misfotos ul {/*Aqui editamos el estilo de la lista no ordenada de la imagenes*/
+  width: 700px;/*Este es el ancho del ul*/
+  margin: 15px;/*El margen que le he querido poner*/
+  list-style: none;/*Aqui le quito el estilo de la lista*/
+  float: left;/*Aqui lo pongo a la izquierda*/
+  padding: 10px;/*Este es el padding que le he puesto*/
+}
+.contenido .misfotos ul li {/*Aquí editamos donde se alojan las imagenes, que son los li*/
+  width: 199px;/*Este es el ancho del li*/
+  float: left;/*Aqui lo pongo a la izquierda*/
+  margin: 10px;/*Este es el margen*/
+  -webkit-filter: sepia(.7);/*Aqui le he metido un filtro a los li, para que despues con el hover pueda cambiarlo a 0. Con sus potencia de duración*/
+  position: relative;/*lo he puesto en la posición relativa por comodidad*/
+  -webkit-transition: .5s;/*Aqui indicamos la duración de la transición*/
+}
+.contenido .misfotos ul li img {/*Aquí editamos las imagenes*/
+  -webkit-transition: .8s;/*Aqui indicamos la duración de la transición*/
+  width: 170px;/*Este es el ancho de las imagenes*/
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);/*Este es el sombreado que le he puesto a las imagenes*/
+  float: left;/*Lo he puesto a la izquierda*/
+  border: 8px solid white;/*Este es el borde que le he puesto a las imagenes*/
+  border-bottom-width: 30px;/*Aqui le he puesto un grosor mas gorde en la parte del final de la imagen*/
+  -moz-box-sizing: border-box;/*Aqui lo que hacemos que el efecto sepia no afecte al borde de la imagen. Es para Mozilla*/
+  -webkit-box-sizing: border-box;/*Aqui lo que hacemos que el efecto sepia no afecte al borde de la imagen. Es para Apple*/
+  box-sizing: border-box;/*Aqui lo que hacemos que el efecto sepia no afecte al borde de la imagen.S*/
+}
+
+.contenido .misfotos ul li:nth-child(1) img {/*Aqui lo que hacemos es primora elegir en orden las imagenes con los numeros "Cada numero representa una posición"*/
+  -webkit-transform: translate(-10px, 20px) rotate(-10deg);/*Segundo con traslate y rotate editar la postura de la imagen*/
+}
+
+.contenido .misfotos ul li:nth-child(2) img {/*Lo mismo*/
+  -webkit-transform: translate(-20px, 70px) rotate(15deg);
+}
+
+.contenido .misfotos ul li:nth-child(3) img {/*Lo mismo*/
+  -webkit-transform: translate(-40px, 5px) rotate(-13deg);
+}
+
+.contenido .misfotos ul li:nth-child(4) img {/*Lo mismo*/
+  -webkit-transform: translate(-20px, 20px) rotate(5deg);
+}
+
+.contenido .misfotos ul li:hover {/*Aquí cada vez que el puntero pasa por encima se desactiva el filtro sepia en el li donde esta las imagenes*/
+  -webkit-filter: sepia(0);
+}
+
+.contenido .misfotos ul li img:hover {/*Aquí cada vez que ponemos el puntero por encima la imagen coge el sombreado indicado con box-shadow y se pone en la escala 1*/
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5), 0 0 15px rgba(0, 0, 0, .7);
+  -webkit-transform: scale(1);
+}
+
+
+
+.alumno .contenido p{
+  font-family:'Franklin Gothic Medium';
+  font-size: x-large;
+  text-align: justify; 
+}
+.alumno .contenido table{
+  background-color: rgb(64, 72, 150);
+  width: 50%;
+  text-align: center;
+  
+}
+
+.alumno .contenido table th,td{
+  padding: 3px;
+}
+
+.alumno .contenido table thead{
+  color:white;
+  background-color:rgb(49, 56, 119);
+}
+
+.alumno .contenido table tr:nth-child(even){/*Solo edita los tr pares apartir del thead*/
+    background-color:rgb(49, 56, 119);
+}
+
+td:hover{
+  background-color: rgb(73, 81, 153);
+}
+
+
+
+
+.noticias{/*Con noticias he echo lo mismo con la diferencia de que no he puesto sepia,ni scale.*/
+  position: relative;
+  left: 900px;
+  top: -295px;
+}
+
+.noticias ul{
+  width: 700px;
+  margin: 15px;
+  list-style: none;
+  float: left;
+  padding: 10px;
+}
+
+
+.noticias ul li {
+  width: 199px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+  position: relative;
+  -webkit-transition: .5s;
+}
+
+.noticias ul li a p{
+  display: block;
+  left: 45px;
+}
+
+.noticias ul li a img {
+  width: 170px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  float: left;
+  border: 8px solid white;
+  border-bottom-width: 30px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-transition: .8s;
+  box-sizing: border-box;
+}
+
+.noticias a p:hover{/*cada vez que el puntero esta encima se cambian de color las letras*/
+  color: rgb(85, 85, 85);
+}
+
+.noticias ul li img:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5), 0 0 15px rgba(0, 0, 0, .7);/*Aqui cada vez que el puntero esta encima se añade un sombreado*/
+  -webkit-transform: rotate3d(1, 1, 2, 355deg);/*Aqui cada vez que el puntero esta encima de la imagen se rota de forma 3d*/
+}
