@@ -1,0 +1,7 @@
+0. git status --> Nos muestra los archivos sleccionado(Arriba) y los archivos que salen abajo son los archivos que no tiene un commit
+1. git add "Ubicación del archivo. Se crear tambien las carpetas"   https://www.youtube.com/watch?v=vxo_k8gWLr4
+2. git commit -m "Texto"
+3. git push origin "rama"
+4. git checkout origin "rama"
+5. git pull "rama"
+6. git push
