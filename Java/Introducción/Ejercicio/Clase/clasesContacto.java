@@ -1,31 +1,41 @@
 package Introducción.Ejercicio.Clase;
 
-public class clasesContacto {
-	
-		//Contacto
-		public static String[] nombre = {"Rafael","Javier","Vladimir","Donald","Cristian"};// Es el nombre del movil		
-		public static int[] telefono = {954455721,617548989,613234596,632157548,612345786};// Es el numero del movil que es un contacto
-		public static void recorridocontact() {
-			for (int cont = 0; cont < 5; cont++) {
-				System.out.println("|\t +"+nombre[cont]+"\t         |");
-				System.out.println("|\t\t -"+telefono[cont]+"\t |");
-			}
-		}
-				
-		public static String llamar() {//Acción (llamas a un contacto de agenda)
-			return añadir;
-		}
-		public static String colgar;//Acción (cuelgas a un contacto que has llamado)
-		
-		
-		
-		
+import Introducción.Ejercicio.Movil;
+import Introducción.Ejercicio.Clase.clasesAgenda;
 
-		
 
-	
+public class clasesContacto{
+	String nombre;
+	String telefono;
 
-		
-		
-	
-}
+	public clasesContacto(){
+		this("Desconocido", null);
+	}
+	public clasesContacto(String nombre){
+		this(nombre, null);
+	}
+	public clasesContacto(String nombre, String telefono){
+		this.nombre = nombre;
+		this.telefono = telefono;
+	}
+	public clasesContacto(String nombre, int telefono){
+		this(nombre, String.valueOf(telefono));
+	}
+
+	public String getNombre(){
+		return this.nombre;
+	}
+	public String getTelefono(){
+		return this.telefono;
+	}
+
+	public void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+	public void setTelefono(String telefono){
+		this.telefono = telefono;
+	}
+
+	public void llamar(){}
+	public void colgar(){}
+}     
