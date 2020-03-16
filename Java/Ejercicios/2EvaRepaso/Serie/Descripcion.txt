@@ -41,3 +41,5 @@ Implementa los anteriores métodos en las clases Videojuego y Serie. Ahora crea 
     Cuenta cuantos Series y Videojuegos hay entregados. Al contarlos, devuélvelos.
     Por último, indica el Videojuego tiene más horas estimadas y la serie con mas temporadas. Muestralos en pantalla con toda su información (usa el método toString()).
 
+Link: https://www.discoduroderoer.es/ejercicios-propuestos-y-resueltos-programacion-orientado-a-objetos-java/
+
