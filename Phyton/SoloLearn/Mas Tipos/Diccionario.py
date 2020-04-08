@@ -22,7 +22,7 @@ primary = {
 }
 
 print(primary["red"])
-print(primary["yellow"])
+#print(primary["yellow"])#Error Yellow no esta
 
 print()
 
