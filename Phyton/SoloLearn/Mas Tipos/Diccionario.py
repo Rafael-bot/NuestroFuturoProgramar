@@ -29,13 +29,51 @@ print()
 """
 Solo los objetos inmutables pueden usarse como claves para los diccionarios. Los objetos inmutables son aquellos que no se pueden cambiar. Hasta ahora, los únicos objetos mutables con los que te has encontrado son listas y diccionarios. Intentar utilizar un objeto mutable como clave de diccionario provoca un TypeError.
 """
+"""
 bad_dict = {
   [1, 2, 3]: "one two three",
 }
+"""
 
 print()
 
 """
+Funciones de Diccionarios
 
+Al igual que las listas, las teclas del diccionario se pueden asignar a diferentes valores.
+Sin embargo, a diferencia de las listas, a una nueva clave de diccionario también se le puede asignar un valor, no solo los que ya existen.
 """
 print("-----------------------------------------\nFunciones de Diccionarios\n-----------------------------------------")
+squares = {1: 1, 2: 4, 3: "error", 4: 16,}
+squares[5] = 64
+squares[3] = 9
+print(squares)
+
+print()
+
+"""
+Para determinar si una clave está en un diccionario, puede usar in y no en, como puede para una lista.
+"""
+nums = {
+  1: "one",
+  2: "two",
+  3: "three",
+}
+print(1 in nums)
+print("three" in nums)
+print(4 not in nums)
+
+print()
+
+"""
+Un método útil de diccionario es get. Hace lo mismo que la indexación, pero si la clave no se encuentra en el diccionario, devuelve otro valor especificado ('None', por defecto).
+"""
+pairs = {1: "apple",
+  "orange": [2, 3, 4],
+  True: False,
+  None: "True",
+}
+
+print(pairs.get("orange"))
+print(pairs.get(7))#Si no lo encuentra mostrara None
+print(pairs.get(123, "not in dictionary"))#El primer argumento es el valor que queremos buscar, pero si no lo encuentra mostrara lo que pongamos en el segundo argumento
