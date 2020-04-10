@@ -26,3 +26,5 @@ Este código muestra un ejemplo donde la comprensión de la lista se queda sin m
 even = [2*i for i in range(10**100)]
 print(even)
 
+
+
