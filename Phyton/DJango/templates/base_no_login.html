@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!--Bootstrap-->
+     <link href="{% static  'node_modules/bootstrap/dist/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!--Css-->
+    <link href="{% static  'css/base.css'%}" rel="stylesheet">
+    <title>Cerveza</title>
+</head>
+
+    {% include 'header.html' %}
+
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    <!--JavaSricpt-->
+
+</body>
+
+    {% include 'footer.html' %}
+
+</html>

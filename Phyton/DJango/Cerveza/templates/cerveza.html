@@ -1,0 +1,11 @@
+{% extends 'base_no_login.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>{{titulo}}</h1>
+    <p>{{texto}}</p>
+
+    <img src="{% static 'img/1.jpg' %}">
+{% endblock %}
+
